@@ -17,24 +17,26 @@
         <div id="app">
             <h1 :class="colore">Il tuo nome è {{ nome }} {{ cognome }}</h1>
 
-            <label>Inserisci il tuo nome</label>: </label>
+            <label>Inserisci il tuo nome</label>
             <input v-model="nome" v-model="colore" placeholder="inserisci il nome">
             
-            <label>Inserisci il tuo Cognome</label>: </label>
+            <label>Inserisci il tuo Cognome</label>
             <input v-model="cognome" v-model="colore" placeholder="inserisci il cognome">
 
             <label>Scegli un colore (rosso, verde o blu): </label>
-            <input v-bind:class="colore" v-model="colore" placeholder="classi del titolo">
+            <input v-bind:class="colore" v-model="colore">
         
         </div>
 
-        <!-- <div id="img">
+        <div id="img">
             <button @click>Crea immagine</button>
 
-            <img class="img-fluid" src="" alt="">
+            <div class="box">
+            <img :class="imagine" class="img-fluid" src="" alt="">
+            </div>
         </div>
     </div>
-    <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
