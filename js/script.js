@@ -5,17 +5,13 @@ createApp({
         return {
             nome: "",
             cognome: "",
-            colore: ""
+            colore: "",
+            immagine: ""
+        }
+    },
+    methods: {
+        btnClick() {
+            this.immagine = "https://cdn.bimmertoday.de/wp-content/uploads/2017/04/2017-BMW-M550i-xDrive-G30-M-Performance-07.jpg"
         }
     },
 }).mount('#app')
-
-const { createImg } = Vue
-
-createImg({
-    data() {
-        return {
-            imagine: "https://www.coches.com/fotos_historicas/bmw/M5-Nighthawk-F10-Australia-2015/bmw_m5-nighthawk-f10-australia-2015_r15.jpg"
-        }
-    },
-}).mount('#img')

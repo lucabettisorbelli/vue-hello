@@ -15,26 +15,31 @@
 
     <div class="container d-flex flex-column justify-content-around">
         <div id="app">
-            <h1 :class="colore">Il tuo nome è {{ nome }} {{ cognome }}</h1>
 
-            <label>Inserisci il tuo nome</label>
-            <input v-model="nome" v-model="colore" placeholder="inserisci il nome">
+            <div class="boxText d-flex flex-column py-5">
             
-            <label>Inserisci il tuo Cognome</label>
-            <input v-model="cognome" v-model="colore" placeholder="inserisci il cognome">
+                <h1 :class="colore">Il tuo nome è {{ nome }} {{ cognome }}</h1>
 
-            <label>Scegli un colore (rosso, verde o blu): </label>
-            <input v-bind:class="colore" v-model="colore">
+                <label>Inserisci il tuo nome</label>
+                <input v-model="nome" v-model="colore" placeholder="inserisci il nome">
+                
+                <label>Inserisci il tuo Cognome</label>
+                <input v-model="cognome" v-model="colore" placeholder="inserisci il cognome">
+
+                <label>Scegli un colore (rosso, verde o blu): </label>
+                <input v-bind:class="colore" v-model="colore">
+
+            </div>
         
-        </div>
 
-        <div id="img">
-            <button @click>Crea immagine</button>
-
-            <div class="box">
-            <img :class="imagine" class="img-fluid" src="" alt="">
+            <div class="boxImagine">
+                <button @click="btnClick">Crea immagine</button>
+                <div class="boxImg">
+                    <img class="img-fluid" :src="immagine" alt="">
+                </div>
             </div>
         </div>
+
     </div>
     <script src="./js/script.js"></script>
 </body>

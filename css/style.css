@@ -1,7 +1,3 @@
-.container {
-    height: 100vh;
-}
-
 .rosso {
     color: red;
 }
@@ -13,4 +9,9 @@
 }
 .violet {
     color: violet;
+}
+
+.boxImg {
+    width: 500px;
+    height: 500px;
 }
